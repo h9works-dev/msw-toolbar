@@ -7,12 +7,18 @@ It is a toolbar component library to improve the usability of msw.
 - [msw](https://mswjs.io/)
 - [msw install](https://mswjs.io/docs/getting-started/install)
 
-### what is provided 
+### What is provided
 
     1. Rest api endpoint management (json)
     2. Add an endpoint that is used only once
     3. Previous endpoint state load function
     4. msw use toggle function -> showcut provided (shift + (cmd or ctrl) + m)
+
+### Install
+
+    yarn add @hnine-dev/msw-toolbar
+
+    npm i @hnine-dev/msw-toolbar
 
 ### How to use
 
@@ -20,17 +26,17 @@ There are two primary ways to use this component:
 
 1. The first step to apply the MswToolbar is to create an Msw Worker that will be managed inside the Toolbar.
 
-    - [msw-init](https://mswjs.io/docs/getting-started/integrate/browser)
+   - [msw-init](https://mswjs.io/docs/getting-started/integrate/browser)
 
    ```javascript
-    import { setupWorker } from 'msw';
-    export const worker = setupWorker();
+   import { setupWorker } from "msw";
+   export const worker = setupWorker();
    ```
 
 2. Then, you can define the endpoints to be managed by the Toolbar and pass it to the Toolbar component's props.
 
    ```javascript
-    import { MswToolbar, Endpoint } from 'msw-toolbar';
+    import { MswToolbar, Endpoint } from '@hnine-dev/msw-toolbar'
     import { SetupWorkerApi, RESTMethods } from 'msw';
 
     const getWorker = (): SetupWorkerApi | undefined => {
@@ -59,8 +65,5 @@ There are two primary ways to use this component:
     document.getElementById('root')
     );
    ```
+
    recommended to use it in higher-level components.
-
-
-
-

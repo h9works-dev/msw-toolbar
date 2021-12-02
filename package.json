@@ -1,16 +1,21 @@
 {
-  "name": "msw-toolbar",
+  "name": "@hnine-dev/msw-toolbar",
   "author": "HNINE-DEV",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/h9works-dev/msw-toolbar",
-  "keywords": ["msw","msw Toolbar","toolbar","mock"],
+  "keywords": [
+    "msw",
+    "msw Toolbar",
+    "toolbar",
+    "mock"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/h9works-dev/msw-toolbar"
+    "url": "git+https://github.com/h9works-dev/msw-toolbar.git"
   },
   "files": [
     "dist"
@@ -26,7 +31,7 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "scripts": {
-    "build": "rm -rf ./dist && tsc",
+    "build": "tsc",
     "prepare": "yarn build"
   },
   "eslintConfig": {
@@ -71,5 +76,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tslib": "^2.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/h9works-dev/msw-toolbar/issues"
+  },
+  "directories": {
+    "example": "example"
   }
 }
